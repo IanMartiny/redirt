@@ -1,0 +1,20 @@
+{
+
+"manifest_version": 2,
+"name": "Redirt",
+"version": "1.0",
+
+"description": "Redirects all reddit.com/* url to old.reddit.com/*",
+
+"icons": {
+  "48": "icons/redirt-48.png"
+},
+
+"content_scripts": [
+  {
+    "matches": ["*://www.reddit.com/*"],
+    "js": ["redirt.js"]
+  }
+]
+
+}
